@@ -5,4 +5,63 @@ pale green: #E1F4F1
 dark green: #2B7E7A
 dark brown/font: #515855 */
 
+h1 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #515855;
+}
 
+h3 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #515855;
+}
+
+h4 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #515855;
+}
+
+/**** HEADER *******************************************/
+#header {
+  background-color: white;
+}
+
+/**** INTRO *******************************************/
+#intro {
+  background-color: #f0edde;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.email-link {
+  font-family: "optima", serif;
+  font-size: 1em;
+  color: white;
+  background-color: #2b7e7a;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/**** ABOUT *******************************************/
+
+#about h1 {
+  text-align: right;
+}
+#about .about-text {
+  background-color: #e1f4f1;
+  padding: 2em;
+  width: 80%;
+  /* MOVE TO RIGHT */
+}
+
+.about-text p {
+  font-family: "optima", serif;
+  font-size: 1em;
+  color: #2b7e7a;
+}
