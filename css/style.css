@@ -5,6 +5,12 @@ pale green: #E1F4F1
 dark green: #2B7E7A
 dark brown/font: #515855 */
 
+/**** GENERAL *******************************************/
+
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: "josefin sans", sans-serif;
   font-size: 1.5em;
@@ -29,6 +35,43 @@ h4 {
 /**** HEADER *******************************************/
 #header {
   background-color: white;
+}
+
+/**** HAMBURGER NAV *******************************************/
+.mobile-container {
+}
+
+.topnav {
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Hide the links inside the navigation menu until click*/
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style nav menu links */
+.topnav a {
+  color: #2b7e7a;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-family: "josefin-sans", sans-serif;
+  text-align: center;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block: 
+  font-size: 1.35em; 
+  top: 0;
+}
+
+/*Style the active links */
+.active {
+  color: #2B7E7A;
 }
 
 /**** INTRO *******************************************/
@@ -65,3 +108,16 @@ h4 {
   font-size: 1em;
   color: #2b7e7a;
 }
+
+/* Hide the main nav menu on mobile screens */
+@media screen and (max-width: 767px) {
+  header nav {
+    display: none;
+  }
+}
+/* TABLET *****************************************************/
+@media screen and (min-width: 768px) {
+  /* Hide hamburger menu on tablet and desktop */
+  .mobile-container {
+    display: none;
+  }

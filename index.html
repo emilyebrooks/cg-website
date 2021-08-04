@@ -7,13 +7,40 @@
     <title>Carrie Gonzales Wellness</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <div id="header">
-        <p>ADD MENU AND LOGO</p>
+        <div class="mobile-container">
+          <!-- Hamburger Menu at top of Mobile -->
+          <div class="topnav">
+            <a href="#home" class="active"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#info">Info</a>
+              <a href="#connect">Connect</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
         <nav>
-          <!-- ADD NAV MENU HERE -->
+          <!-- Standard navigation > 768 -->
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
         </nav>
         <div id="logo"></div>
       </div>
@@ -90,5 +117,6 @@
       </div>
     </main>
     <footer><!-- SOCIAL MEDIA --></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
