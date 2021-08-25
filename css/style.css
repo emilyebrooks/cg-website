@@ -35,9 +35,50 @@ h4 {
 /**** HEADER *******************************************/
 #header {
   background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 
-/**** HAMBURGER NAV *******************************************/
+nav {
+  text-align: center;
+  font-size: 0.85em;
+  padding: 1.75em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline; /*change to float: right; for @>768 */
+  font-family: "josefin sans", sans-serif; /* for lines */
+  color: #2b7e7a; /* for lines */
+  padding: 0.75em;
+}
+
+nav li a {
+  /* display: block;  turn on for >768> */
+  font-family: "josefin sans", sans-serif;
+  color: #2b7e7a;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: solid underline #2b7e7a 1px;
+}
+#logo {
+  background-image: url("../img/logowithname@2x.png");
+  /* background-size: 70%; */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 290px;
+  /* margin-bottom: 1.5em; */
+}
+
+/* *** HAMBURGER NAV ******************************************
 .mobile-container {
 }
 
@@ -47,12 +88,12 @@ h4 {
 }
 
 /* Hide the links inside the navigation menu until click*/
-.topnav #myLinks {
+/* .topnav #myLinks {
   display: none;
-}
+} */
 
 /* Style nav menu links */
-.topnav a {
+/* .topnav a {
   color: #2b7e7a;
   padding: 10px 10px;
   text-decoration: none;
@@ -60,25 +101,36 @@ h4 {
   font-family: "josefin-sans", sans-serif;
   text-align: center;
   display: block;
-}
+} */
 
 /* Style the hamburger menu */
-.topnav a.icon {
+/* .topnav a.icon {
   display: block: 
   font-size: 1.35em; 
   top: 0;
-}
+} */
 
 /*Style the active links */
-.active {
+/* .active {
   color: #2B7E7A;
-}
+} */
 
 /**** INTRO *******************************************/
 #intro {
   background-color: #f0edde;
-  padding: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   text-align: center;
+}
+
+#intro h3 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.button {
+  margin: 1em;
+  padding: 1em;
 }
 
 .email-link {
@@ -95,11 +147,15 @@ h4 {
 
 #about h1 {
   text-align: right;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
 }
 #about .about-text {
   background-color: #e1f4f1;
   padding: 2em;
   width: 80%;
+  float: right;
   /* MOVE TO RIGHT */
 }
 
@@ -109,15 +165,15 @@ h4 {
   color: #2b7e7a;
 }
 
-/* Hide the main nav menu on mobile screens */
+/* Hide the main nav menu on mobile screens
 @media screen and (max-width: 767px) {
   header nav {
     display: none;
   }
-}
-/* TABLET *****************************************************/
+} */
+/* TABLET ****************************************************
 @media screen and (min-width: 768px) {
   /* Hide hamburger menu on tablet and desktop */
-  .mobile-container {
+/* .mobile-container {
     display: none;
-  }
+  }  */
