@@ -32,6 +32,11 @@ h4 {
   color: #515855;
 }
 
+p {
+  font-family: "optima", serif;
+  font-size: 1em;
+}
+
 /**** HEADER *******************************************/
 #header {
   background-color: white;
@@ -164,8 +169,6 @@ li a:hover {
 }
 
 .about-text p {
-  font-family: "optima", serif;
-  font-size: 1em;
   color: #2b7e7a;
 }
 
@@ -229,9 +232,31 @@ li a:hover {
   padding: 0.35em;
 }
 
+#info p {
+  color: #515855;
+}
+
 #connect {
   padding-top: 0.5em;
   text-align: center;
+}
+
+.contact-info {
+  margin: 1.5em;
+}
+
+#connect a {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  font-family: "optima", serif;
+  font-size: 1em;
+  color: #515855;
+}
+
+#connect a:hover {
+  text-decoration: solid underline #2b7e7a 1px;
+  color: #2b7e7a;
 }
 
 /* TABLET ****************************************************/
