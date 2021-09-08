@@ -186,6 +186,7 @@ li a:hover {
     display: none;
   }  */
 
+/**** SERVICES *******************************************/
 #services {
   clear: both;
   margin-top: 5%;
@@ -238,6 +239,7 @@ li a:hover {
   color: #515855;
 }
 
+/**** CONNECT *******************************************/
 #connect {
   padding-top: 0.5em;
   text-align: center;
@@ -259,14 +261,65 @@ li a:hover {
   text-decoration: solid underline #2b7e7a 1px;
   color: #2b7e7a;
 }
+/* Contact Form */
+
+#fs-frm {
+  font-family: "optima", serif;
+}
+
+#fs-frm-inputs {
+  border: none;
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 5px;
+  border: 1px solid #2b7e7a;
+  background-color: #e1f4f1;
+  color: #2b7e7a;
+  margin: 20px auto;
+}
+
+#full-name,
+#email-address {
+  color: #2b7e7a;
+  width: 50%;
+}
+
+#message {
+  color: #2b7e7a;
+  width: 70%;
+}
+
+#button {
+  width: 80px;
+  height: 35px;
+  color: white;
+  background-color: #2b7e7a;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* Social Icons */
+.social-media {
+  margin-top: 35px;
+}
 
 .fab {
-  width: 2em;
+  width: 70px;
   font-size: 50px;
   text-align: center;
   color: #2b7e7a;
   background: white;
 }
+
+/**** FOOTER *******************************************/
 
 footer {
   padding: 2em;

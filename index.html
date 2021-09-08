@@ -132,20 +132,46 @@
             >email: cegwellness@gmail.com</a
           >
         </div>
-        <form action="https://formspree.io/f/mqkwwnqy" method="POST">
-          <label>
-            Your name:
-            <input type="text" name="_replyto" /> </label
-          ><label>
-            Your email:
-            <input type="email" name="_replyto" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
+        <form
+          id="fs-frm"
+          name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/mqkwwnqy"
+          method="post"
+        >
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="First & Last Name"
+              required=""
+            />
+            <label for="email-address">Email Address</label>
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="sample@email.com"
+              required=""
+            />
+            <label for="message">Message</label>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Message"
+              required=""
+            ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Contact Form Submission"
+            />
+          </fieldset>
+          <input id="button" type="submit" value="Send" />
         </form>
         <div class="social-media">
           <i href="#" class="fab fa-facebook"></i>
