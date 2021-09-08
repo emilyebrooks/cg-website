@@ -6,6 +6,9 @@ dark green: #2B7E7A
 dark brown/font: #515855 */
 
 /**** GENERAL *******************************************/
+html {
+  font-size: 16px;
+}
 
 body {
   margin: 0;
@@ -13,14 +16,12 @@ body {
 
 h1 {
   font-family: "josefin sans", sans-serif;
-  font-size: 1.5em;
   font-weight: normal;
   color: #515855;
 }
 
 h3 {
   font-family: "josefin sans", sans-serif;
-  font-size: 1.1em;
   font-weight: 400;
   color: #515855;
 }
@@ -60,7 +61,7 @@ nav ul li {
   display: inline; /*change to float: right; for @>768 */
   font-family: "josefin sans", sans-serif; /* for lines */
   color: #2b7e7a; /* for lines */
-  padding: 1.25em;
+  padding: 10px;
   /* font-size: 0.65em; */
 }
 
@@ -196,7 +197,8 @@ li a:hover {
   height: 35px;
   background-color: #2b7e7a;
   color: white;
-  padding-top: 0.65em;
+  padding-top: 0.35em;
+  padding-bottom: 0.2em;
   padding-left: 0.75em;
 }
 
@@ -250,7 +252,6 @@ li a:hover {
   padding: 0.5em;
   text-decoration: none;
   font-family: "optima", serif;
-  font-size: 1em;
   color: #515855;
 }
 
@@ -258,6 +259,30 @@ li a:hover {
   text-decoration: solid underline #2b7e7a 1px;
   color: #2b7e7a;
 }
+
+.fab {
+  width: 2em;
+  font-size: 50px;
+  text-align: center;
+  color: #2b7e7a;
+  background: white;
+}
+
+footer {
+  padding: 2em;
+}
+
+footer p {
+  color: #515855;
+  text-align: center;
+}
+
+/* NAV FONT SIZE FOR SMALL SCREENS ***************************/
+/* @media (max-width: 444px) {
+  nav li {
+    font-size: 0.75em;
+  }
+} */
 
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {

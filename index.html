@@ -7,11 +7,17 @@
     <title>Carrie Gonzales Wellness</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- Fontawesome link for social media buttons -->
+    <script
+      src="https://kit.fontawesome.com/07ecfc6b71.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- This is link to icon library for hamburger menu (bars) on small screens 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
   </head>
   <body>
     <header>
@@ -126,14 +132,30 @@
             >email: cegwellness@gmail.com</a
           >
         </div>
-        <!-- FORM -->
+        <form action="https://formspree.io/f/mqkwwnqy" method="POST">
+          <label>
+            Your name:
+            <input type="text" name="_replyto" /> </label
+          ><label>
+            Your email:
+            <input type="email" name="_replyto" />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
         <div class="social-media">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <i href="#" class="fab fa-facebook"></i>
+          <i href="#" class="fab fa-linkedin"></i>
         </div>
       </div>
     </main>
-    <footer><!-- SOCIAL MEDIA --></footer>
+    <footer>
+      <p>est. 2021</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
