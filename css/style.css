@@ -41,7 +41,6 @@ p {
 /**** HEADER *******************************************/
 #header {
   background-color: white;
-  padding-top: 1em;
   padding-bottom: 1.5em;
 }
 
@@ -58,7 +57,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline; /*change to float: right; for @>768 */
+  display: inline; /*change to float: right; for >768 */
   font-family: "josefin sans", sans-serif; /* for lines */
   color: #2b7e7a; /* for lines */
   padding: 10px;
@@ -84,22 +83,21 @@ li a:hover {
   /* margin-bottom: 1.5em; */
 }
 
-/* *** HAMBURGER NAV ******************************************
+/* *** HAMBURGER NAV FOR SCREENS <342 ******************************************/
 .mobile-container {
 }
 
 .topnav {
   overflow: hidden;
-  padding: 10px;
 }
 
 /* Hide the links inside the navigation menu until click*/
-/* .topnav #myLinks {
+.topnav #myLinks {
   display: none;
-} */
+}
 
 /* Style nav menu links */
-/* .topnav a {
+.topnav a {
   color: #2b7e7a;
   padding: 10px 10px;
   text-decoration: none;
@@ -107,19 +105,33 @@ li a:hover {
   font-family: "josefin-sans", sans-serif;
   text-align: center;
   display: block;
-} */
+}
 
 /* Style the hamburger menu */
-/* .topnav a.icon {
-  display: block: 
-  font-size: 1.35em; 
+.topnav a.icon {
+  display: block;
+  font-size: 1.5em;
   top: 0;
-} */
+}
 
 /*Style the active links */
-/* .active {
-  color: #2B7E7A;
-} */
+.active {
+  color: #2b7e7a;
+}
+
+/* Hide the main nav menu on screens <342 */
+@media screen and (max-width: 341px) {
+  header nav {
+    display: none;
+  }
+}
+
+/* Hide hamburger menu on screens >341 */
+@media screen and (min-width: 342px) {
+  .mobile-container {
+    display: none;
+  }
+}
 
 /**** INTRO *******************************************/
 #intro {
@@ -172,19 +184,6 @@ li a:hover {
 .about-text p {
   color: #2b7e7a;
 }
-
-/* Hide the main nav menu on mobile screens
-@media screen and (max-width: 767px) {
-  header nav {
-    display: none;
-  }
-} */
-/* TABLET ****************************************************
-@media screen and (min-width: 768px) {
-  /* Hide hamburger menu on tablet and desktop */
-/* .mobile-container {
-    display: none;
-  }  */
 
 /**** SERVICES *******************************************/
 #services {
@@ -246,7 +245,7 @@ li a:hover {
 }
 
 .contact-info {
-  margin: 1.5em;
+  margin: 1.5em 1.5em 0 1.5em;
 }
 
 #connect a {
@@ -265,6 +264,8 @@ li a:hover {
 
 #fs-frm {
   font-family: "optima", serif;
+  margin-bottom: 30px;
+  color: #2b7e7a;
 }
 
 #fs-frm-inputs {
@@ -281,19 +282,17 @@ textarea {
   padding: 5px;
   border: 1px solid #2b7e7a;
   background-color: #e1f4f1;
-  color: #2b7e7a;
   margin: 20px auto;
 }
 
 #full-name,
 #email-address {
-  color: #2b7e7a;
   width: 50%;
 }
 
 #message {
-  color: #2b7e7a;
   width: 70%;
+  margin-bottom: 0;
 }
 
 #button {
@@ -303,17 +302,17 @@ textarea {
   background-color: #2b7e7a;
   border-radius: 10px;
   text-decoration: none;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* Social Icons */
 .social-media {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .fab {
   width: 70px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   color: #2b7e7a;
   background: white;
@@ -328,23 +327,20 @@ footer {
 footer p {
   color: #515855;
   text-align: center;
+  margin: 0;
+  padding: 5px;
 }
-
-/* NAV FONT SIZE FOR SMALL SCREENS ***************************/
-/* @media (max-width: 444px) {
-  nav li {
-    font-size: 0.75em;
-  }
-} */
 
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {
   /*  INSERT HORIZONTAL LOGO UPON CLIENT REVISION */
   /*Need to fix how words are next to logo instead of under */
+  nav ul li {
+    float: right; /*change to float: right; for >768 */
+  }
   .icons li {
     display: inline;
   }
-
   .icons img {
     display: inline;
   }
