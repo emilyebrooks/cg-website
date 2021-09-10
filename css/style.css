@@ -18,6 +18,7 @@ h1 {
   font-family: "josefin sans", sans-serif;
   font-weight: normal;
   color: #515855;
+  font-size: 1.75em;
 }
 
 h3 {
@@ -173,21 +174,21 @@ li a:hover {
   margin-right: 5%;
   margin-bottom: 0;
 }
-#about .about-text {
+.about-text {
   background-color: #e1f4f1;
-  padding: 2em;
-  width: 80%;
+  padding: 2em 2em 2em 5em;
+  width: 65%;
   float: right;
-  /* display: flex; for photo placement */
+  margin-bottom: -5%;
 }
 
 .about-text p {
   color: #2b7e7a;
 }
 
-/* .photo {
-  flex to float end and left
-} */
+.photo {
+  margin-left: 5%;
+}
 
 /**** SERVICES *******************************************/
 #services {
@@ -202,11 +203,10 @@ li a:hover {
   background-color: #2b7e7a;
   color: white;
   padding-top: 0.35em;
-  padding-bottom: 0.2em;
-  padding-left: 0.75em;
+  padding-left: 5%;
 }
 
-/*icon text style */
+/*icon text style WHEN THESE WERE A LIST */
 /* .icons li {
   text-align: center;
   color: #2b7e7a;
@@ -217,17 +217,20 @@ li a:hover {
 } */
 
 /*icon style */
-
-.icons {
+.icons-small {
   margin-top: 30px;
 }
 
-.icons img {
+.icons-small img {
   margin: 30px auto;
   display: block;
   padding: 10px;
 }
 
+.icons-large img {
+  display: none;
+}
+/* WHAT IS PCOS */
 #info {
   background-color: #f0edde;
   padding: 2.25em;
@@ -263,7 +266,7 @@ li a:hover {
 }
 
 #connect a:hover {
-  text-decoration: solid underline #2b7e7a 31px;
+  text-decoration: solid underline #2b7e7a 1px;
   color: #2b7e7a;
 }
 /* Contact Form */
@@ -341,13 +344,48 @@ footer p {
 @media screen and (min-width: 768px) {
   /*  INSERT HORIZONTAL LOGO UPON CLIENT REVISION */
   /*Need to fix how words are next to logo instead of under */
-  nav ul li {
-    float: right; /*change to float: right; for >768 */
+  h4 {
+    font-size: 1.5em; 
   }
-  .icons li {
+  
+  nav ul li {
+    float: right;
+    font-size: 1.15em; 
+  }
+  
+  .about-text {
+    margin-bottom: -15%; 
+  }
+
+  #services {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .icons-small {
+    text-align: center;
+  }
+  .icons-small img {
     display: inline;
   }
-  .icons img {
+
+  #connect a {
+    display: inline;
+    padding: 30px; 
+}
+/* DESKTOP ****************************************************/
+@media screen and (min-width: 1060px) {
+  
+  #services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .icons-large {
+    text-align: center;
+  }
+  .icons-small img {
+    display: none;
+  }
+  .icons-large img {
     display: inline;
   }
 }
