@@ -178,12 +178,16 @@ li a:hover {
   padding: 2em;
   width: 80%;
   float: right;
-  /* MOVE TO RIGHT */
+  /* display: flex; for photo placement */
 }
 
 .about-text p {
   color: #2b7e7a;
 }
+
+/* .photo {
+  flex to float end and left
+} */
 
 /**** SERVICES *******************************************/
 #services {
@@ -203,23 +207,25 @@ li a:hover {
 }
 
 /*icon text style */
-.icons li {
+/* .icons li {
   text-align: center;
   color: #2b7e7a;
   font-family: "josefin sans", sans-serif;
   font-size: 1.5em;
   display: block;
   text-decoration: none;
-}
+} */
 
 /*icon style */
+
+.icons {
+  margin-top: 30px;
+}
+
 .icons img {
-  margin: auto;
+  margin: 30px auto;
   display: block;
-  height: 1em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  font-size: 2.5em;
+  padding: 10px;
 }
 
 #info {
@@ -257,7 +263,7 @@ li a:hover {
 }
 
 #connect a:hover {
-  text-decoration: solid underline #2b7e7a 1px;
+  text-decoration: solid underline #2b7e7a 31px;
   color: #2b7e7a;
 }
 /* Contact Form */
@@ -280,7 +286,7 @@ input,
 textarea {
   display: block;
   padding: 5px;
-  border: 1px solid #2b7e7a;
+  border: 2px solid #2b7e7a;
   background-color: #e1f4f1;
   margin: 20px auto;
 }
