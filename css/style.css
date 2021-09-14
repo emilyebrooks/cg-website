@@ -42,15 +42,17 @@ p {
 /**** HEADER *******************************************/
 #header {
   background-color: white;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.75rem;
 }
 
 nav {
   text-align: center;
-  padding: 1.75em;
+  padding: 1.25rem;
 }
 
 nav ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -58,15 +60,13 @@ nav ul {
 }
 
 nav ul li {
-  display: inline; /*change to float: right; for >768 */
   font-family: "josefin sans", sans-serif; /* for lines */
   color: #2b7e7a; /* for lines */
-  padding: 10px;
+  padding: 1rem;
 }
 
 nav li a {
   color: #2b7e7a;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -192,7 +192,7 @@ li a:hover {
 #services {
   clear: both;
   margin-top: 5%;
-  margin-bottom: 8%;
+  margin-bottom: 1.5rem;
 }
 
 #services h1 {
@@ -202,7 +202,7 @@ li a:hover {
   color: white;
   padding-top: 0.35em;
   padding-left: 5%;
-} 
+}
 
 /*icon text style WHEN THESE WERE A LIST */
 /* .icons li {
@@ -217,28 +217,29 @@ li a:hover {
 /*icon style */
 .icons-small {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .icons-small img {
-  margin: 30px auto;
-  display: block;
-  padding: 10px;
+  margin: 1.25rem auto;
 }
 
 .icons-large img {
   display: none;
 }
+
 /* WHAT IS PCOS */
 #info {
   background-color: #f0edde;
-  padding: 2.25em;
+  padding: 1.25rem 2.25rem;
 }
 
 #info h4 {
   background-color: white;
   border: 1px solid #2b7e7a;
   text-align: center;
-  padding: 0.35em;
+  padding: 0.65rem;
 }
 
 #info p {
@@ -292,6 +293,9 @@ textarea {
   margin: 20px auto;
 }
 
+::placeholder {
+  color: #2b7e7a;
+}
 
 #full-name,
 #email-address {
@@ -344,47 +348,70 @@ footer p {
   /*  INSERT HORIZONTAL LOGO UPON CLIENT REVISION */
   /*Need to fix how words are next to logo instead of under */
   h4 {
-    font-size: 1.5em; 
+    font-size: 1.5rem;
   }
-  
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
   nav ul li {
-    float: right;
-    font-size: 1.15em; 
+    font-size: 1.15rem;
   }
-  
+
   .about-text {
-    margin-bottom: -15%; 
+    margin-bottom: -15%;
   }
 
   #services {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .icons-small {
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+
   .icons-small img {
-    display: inline;
+    margin: auto 0;
   }
 
   #connect a {
     display: inline;
-    padding: 30px; 
+    padding: 30px;
+  }
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
-  
   #services {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .icons-large {
-    text-align: center;
+
+  .icons-small {
+    display: none;
   }
+
+  .icons-large {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .icons-large img {
+    display: inline;
+    /* text-align: center; */
+  }
+
+  /* .icons-large {
+    display: inline;
+    justify-content: center;
+    /* text-align: center; */
+  /* }
   .icons-small img {
     display: none;
   }
   .icons-large img {
-    display: inline;
-  }
+    display: flex;
+  } */
 }
