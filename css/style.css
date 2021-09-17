@@ -362,6 +362,9 @@ footer p {
   .about-text {
     margin-bottom: -15%;
   }
+  .photo {
+    clear: both;
+  }
 
   #services {
     margin-top: 30px;
@@ -382,6 +385,21 @@ footer p {
     padding: 30px;
   }
 }
+
+/* Adjust formatting of photo overlay with about text box */
+@media screen and (min-width: 900px) {
+  .about-text {
+    width: 75%;
+    /* padding-left: 10em; */
+  }
+
+  .about-text p {
+    padding-left: 3rem;
+  }
+
+  .photo {
+  }
+}
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
   #services {
@@ -395,7 +413,7 @@ footer p {
 
   .icons-large {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 3rem;
   }
   .icons-large img {
