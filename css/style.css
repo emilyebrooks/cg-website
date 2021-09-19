@@ -98,9 +98,9 @@ li a:hover {
 /* Style nav menu links */
 .topnav a {
   color: #2b7e7a;
-  padding: 10px 10px;
+  padding: 0.75rem;
   text-decoration: none;
-  font-size: 0.75em;
+  font-size: 1rem;
   font-family: "josefin-sans", sans-serif;
   text-align: center;
   display: block;
@@ -109,7 +109,7 @@ li a:hover {
 /* Style the hamburger menu */
 .topnav a.icon {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.75rem;
   top: 0;
 }
 
@@ -152,10 +152,10 @@ li a:hover {
 
 .email-link {
   font-family: "optima", serif;
-  font-size: 1em;
+  font-size: 1rem;
   color: white;
   background-color: #2b7e7a;
-  padding: 10px;
+  padding: 0.65rem;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -174,7 +174,7 @@ li a:hover {
 }
 .about-text {
   background-color: #e1f4f1;
-  padding: 2em 2em 2em 5em;
+  padding: 2rem 2rem 2rem 5rem;
   width: 65%;
   float: right;
   margin-bottom: -5%;
@@ -200,23 +200,13 @@ li a:hover {
   height: 35px;
   background-color: #2b7e7a;
   color: white;
-  padding-top: 0.35em;
+  padding-top: 0.65rem;
   padding-left: 5%;
 }
 
-/*icon text style WHEN THESE WERE A LIST */
-/* .icons li {
-  text-align: center;
-  color: #2b7e7a;
-  font-family: "josefin sans", sans-serif;
-  font-size: 1.5em;
-  display: block;
-  text-decoration: none;
-} */
-
 /*icon style */
 .icons-small {
-  margin-top: 30px;
+  margin-top: 1.75rem;
   display: flex;
   flex-direction: column;
 }
@@ -248,17 +238,17 @@ li a:hover {
 
 /**** CONNECT *******************************************/
 #connect {
-  padding-top: 0.5em;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
 .contact-info {
-  margin: 1.5em 1.5em 0 1.5em;
+  margin: 1.5rem 1.5rem 0 1.5rem;
 }
 
 #connect a {
   display: block;
-  padding: 0.5em;
+  padding: 0.5rem;
   text-decoration: none;
   font-family: "optima", serif;
   color: #515855;
@@ -272,7 +262,7 @@ li a:hover {
 
 #fs-frm {
   font-family: "optima", serif;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   color: #2b7e7a;
 }
 
@@ -287,10 +277,10 @@ label {
 input,
 textarea {
   display: block;
-  padding: 5px;
+  padding: 0.35rem;
   border: 2px solid #2b7e7a;
   background-color: #e1f4f1;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 ::placeholder {
@@ -319,12 +309,12 @@ textarea {
 
 /* Social Icons */
 .social-media {
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 .fab {
   width: 70px;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   color: #2b7e7a;
   background: white;
@@ -333,14 +323,14 @@ textarea {
 /**** FOOTER *******************************************/
 
 footer {
-  padding: 2em;
+  padding: 2rem;
 }
 
 footer p {
   color: #515855;
   text-align: center;
   margin: 0;
-  padding: 5px;
+  padding: 0.35rem;
 }
 
 /* TABLET ****************************************************/
@@ -367,8 +357,8 @@ footer p {
   }
 
   #services {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .icons-small {
@@ -382,7 +372,7 @@ footer p {
 
   #connect a {
     display: inline;
-    padding: 30px;
+    padding: 2rem;
   }
 }
 
@@ -390,7 +380,6 @@ footer p {
 @media screen and (min-width: 900px) {
   .about-text {
     width: 75%;
-    /* padding-left: 10em; */
   }
 
   .about-text p {
@@ -398,13 +387,14 @@ footer p {
   }
 
   .photo {
+    clear: both;
   }
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
   #services {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .icons-small {
@@ -420,16 +410,4 @@ footer p {
     display: inline;
     /* text-align: center; */
   }
-
-  /* .icons-large {
-    display: inline;
-    justify-content: center;
-    /* text-align: center; */
-  /* }
-  .icons-small img {
-    display: none;
-  }
-  .icons-large img {
-    display: flex;
-  } */
 }
