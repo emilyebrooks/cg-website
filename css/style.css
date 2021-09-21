@@ -42,12 +42,11 @@ p {
 /**** HEADER *******************************************/
 #header {
   background-color: white;
-  padding-bottom: 1.75rem;
 }
 
 nav {
   text-align: center;
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 0 1.25rem; /*0 on bottom to keep logo closer to menu bar */
 }
 
 nav ul {
@@ -56,7 +55,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 0.75em;
+  /* padding-bottom: 0.75em; */
 }
 
 nav ul li {
@@ -74,12 +73,11 @@ li a:hover {
   text-decoration: solid underline #2b7e7a 1px;
 }
 #logo {
-  background-image: url("../img/logowithname@2x.png");
-  /* background-size: 70%; */
+  background-image: url("../img/logo-vertical.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 290px;
-  /* margin-bottom: 1.5em; */
+  background-position: center top;
+  height: 325px;
 }
 
 /* *** HAMBURGER NAV FOR SCREENS <342 ******************************************/
@@ -243,10 +241,10 @@ li a:hover {
 }
 
 .contact-info {
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
-#connect a {
+.contact-info a {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -254,7 +252,7 @@ li a:hover {
   color: #515855;
 }
 
-#connect a:hover {
+.contact-info a:hover {
   text-decoration: solid underline #2b7e7a 1px;
   color: #2b7e7a;
 }
@@ -309,15 +307,19 @@ textarea {
 
 /* Social Icons */
 .social-media {
-  margin-top: 3rem;
+  margin: 3rem 35% 0 35%;
+  display: flex;
+  justify-content: center;
 }
 
 .fab {
-  width: 70px;
+  width: 60px;
   font-size: 2.5rem;
   text-align: center;
   color: #2b7e7a;
   background: white;
+  /* display: inline; */
+  /* justify-content: center; */
 }
 
 /**** FOOTER *******************************************/
@@ -335,8 +337,14 @@ footer p {
 
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {
-  /*  INSERT HORIZONTAL LOGO UPON CLIENT REVISION */
-  /*Need to fix how words are next to logo instead of under */
+  #logo {
+    background-image: url("../img/logo-horizontal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 400px;
+  }
+
   h4 {
     font-size: 1.5rem;
   }
@@ -370,9 +378,16 @@ footer p {
     margin: auto 0;
   }
 
-  #connect a {
+  .contact-info a {
     display: inline;
     padding: 2rem;
+  }
+  .social-media {
+    margin: 1rem 35% 0 35%;
+  }
+
+  .social-media a {
+    padding: 0.25rem;
   }
 }
 
@@ -392,6 +407,14 @@ footer p {
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
+  #logo {
+    background-image: url("../img/logo-horizontal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 500px;
+  }
+
   #services {
     margin-top: 3rem;
     margin-bottom: 3rem;
