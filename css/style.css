@@ -18,7 +18,14 @@ h1 {
   font-family: "josefin sans", sans-serif;
   font-weight: normal;
   color: #515855;
-  font-size: 1.75em;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #515855;
 }
 
 h3 {
@@ -27,16 +34,9 @@ h3 {
   color: #515855;
 }
 
-h4 {
-  font-family: "josefin sans", sans-serif;
-  font-size: 1.3em;
-  font-weight: normal;
-  color: #515855;
-}
-
 p {
   font-family: "optima", serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /**** HEADER *******************************************/
@@ -55,29 +55,21 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* padding-bottom: 0.75em; */
 }
 
 nav ul li {
-  font-family: "josefin sans", sans-serif; /* for lines */
+  font-family: "josefin sans", sans-serif;
   color: #2b7e7a; /* for lines */
   padding: 1rem;
 }
 
 nav li a {
-  color: #2b7e7a;
+  color: #2b7e7a; /*for text */
   text-decoration: none;
 }
 
 li a:hover {
   text-decoration: solid underline #2b7e7a 1px;
-}
-#logo {
-  background-image: url("../img/logo-vertical.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-  height: 325px;
 }
 
 /* *** HAMBURGER NAV FOR SCREENS <342 ******************************************/
@@ -130,22 +122,30 @@ li a:hover {
   }
 }
 
+#logo {
+  background-image: url("../img/logo-vertical.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 325px;
+  margin-bottom: 1rem;
+}
+
 /**** INTRO *******************************************/
 #intro {
   background-color: #f0edde;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   text-align: center;
 }
 
 #intro h3 {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
 }
 
 .button {
-  margin: 1em;
-  padding: 1em;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .email-link {
@@ -166,10 +166,9 @@ li a:hover {
 
 #about h1 {
   text-align: right;
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-bottom: 0;
+  margin: 5% 5% 0 0;
 }
+
 .about-text {
   background-color: #e1f4f1;
   padding: 2rem 2rem 2rem 5rem;
@@ -223,7 +222,7 @@ li a:hover {
   padding: 1.25rem 2.25rem;
 }
 
-#info h4 {
+#info h2 {
   background-color: white;
   border: 1px solid #2b7e7a;
   text-align: center;
@@ -256,8 +255,8 @@ li a:hover {
   text-decoration: solid underline #2b7e7a 1px;
   color: #2b7e7a;
 }
-/* Contact Form */
 
+/* Contact Form */
 #fs-frm {
   font-family: "optima", serif;
   margin-bottom: 2rem;
@@ -318,8 +317,6 @@ textarea {
   text-align: center;
   color: #2b7e7a;
   background: white;
-  /* display: inline; */
-  /* justify-content: center; */
 }
 
 /**** FOOTER *******************************************/
@@ -337,15 +334,7 @@ footer p {
 
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {
-  #logo {
-    background-image: url("../img/logo-horizontal.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 400px;
-  }
-
-  h4 {
+  h2 {
     font-size: 1.5rem;
   }
 
@@ -357,9 +346,18 @@ footer p {
     font-size: 1.15rem;
   }
 
+  #logo {
+    background-image: url("../img/logo-horizontal.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 400px;
+  }
+
   .about-text {
     margin-bottom: -15%;
   }
+
   .photo {
     clear: both;
   }
