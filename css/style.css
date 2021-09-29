@@ -74,8 +74,8 @@ li a:hover {
 }
 
 /* *** HAMBURGER NAV FOR SCREENS <342 ******************************************/
-.mobile-container {
-}
+/* .mobile-container {
+} */
 
 .topnav {
   overflow: hidden;
@@ -141,7 +141,7 @@ li a:hover {
 }
 
 #intro h3 {
-  padding: 0 10%;"
+  padding: 0 10%;
 }
 
 .button {
@@ -359,9 +359,9 @@ footer p {
     margin-bottom: -15%;
   }
 
-  .photo {
+  /* .photo {
     clear: both;
-  }
+  } */
 
   #services {
     margin-top: 2rem;
@@ -400,9 +400,9 @@ footer p {
     padding-left: 3rem;
   }
 
-  .photo {
+  /* .photo {
     clear: both;
-  }
+  } */
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
@@ -431,5 +431,14 @@ footer p {
   .icons-large img {
     display: inline;
     /* text-align: center; */
+  }
+}
+/* LARGE DISPLAYS ****************************************************/
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+  .photo img {
+    width: 20%;
   }
 }
