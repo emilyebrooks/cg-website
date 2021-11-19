@@ -186,6 +186,18 @@ li a:hover {
   margin-left: 5%;
 }
 
+/****Adjust alignment between photo edge and text box blue background on smaller screens ***/
+@media screen and (max-width: 440px) {
+  .about-text {
+    padding: 2rem 3rem 2rem 4rem;
+    width: 58%;
+  }
+
+  .photo {
+    margin-left: 10%;
+  }
+}
+
 /**** SERVICES *******************************************/
 #services {
   clear: both;
@@ -359,10 +371,6 @@ footer p {
     margin-bottom: -15%;
   }
 
-  /* .photo {
-    clear: both;
-  } */
-
   #services {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -400,9 +408,9 @@ footer p {
     padding-left: 3rem;
   }
 
-  /* .photo {
-    clear: both;
-  } */
+  .photo img {
+    width: 20%;
+  }
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
@@ -437,8 +445,5 @@ footer p {
 @media screen and (min-width: 1200px) {
   html {
     font-size: 20px;
-  }
-  .photo img {
-    width: 20%;
   }
 }
