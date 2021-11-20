@@ -445,7 +445,7 @@ footer p {
   }
 }
 /* DESKTOP ****************************************************/
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   html {
     font-size: 20px;
   }
@@ -476,7 +476,7 @@ footer p {
     display: inline;
     /* text-align: center; */
   }
-}
-/* LARGE DISPLAYS ****************************************************/
-@media screen and (min-width: 1200px) {
-}
+} /*Closing bracket for 1060 */
+
+/* LARGE DISPLAYS ****************************************************
+ @media screen and (min-width: 1200px) {} */
