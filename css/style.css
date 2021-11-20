@@ -31,6 +31,7 @@ h2 {
 h3 {
   font-family: "josefin sans", sans-serif;
   font-weight: 400;
+  font-size: 1.25em; 
   color: #515855;
 }
 
@@ -38,11 +39,13 @@ p {
   font-family: "raleway", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+  line-height: 1.35;
 }
 
 /**** HEADER *******************************************/
 #header {
   background-color: white;
+  padding-bottom: 1em;
 }
 
 nav {
@@ -135,20 +138,22 @@ li a:hover {
 /**** INTRO *******************************************/
 #intro {
   background-color: #f0edde;
-  padding-top: 0.5rem;
+  padding-top: 1em;
   padding-bottom: 0.5rem;
   text-align: center;
 }
 
 #intro h3 {
-  padding: 0 10%;
+  padding: 0 10% .5em 10%;
 }
 
 #intro p {
   width: 75%;
   margin: auto;
-  font-size: 0.8em;
+  padding-bottom: .5em; 
   font-style: italic;
+  font-family: "josefin sans", sans-serif;
+  font-size: 1.1em; 
   color: #515855;
 }
 
@@ -252,6 +257,8 @@ li a:hover {
 
 #info p {
   color: #515855;
+  padding-bottom: 1em; 
+  line-height: 1.75em;
 }
 
 .message-me {
@@ -289,7 +296,7 @@ li a:hover {
 /* Contact Form */
 #fs-frm {
   font-family: "optima", serif;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   color: #2b7e7a;
 }
 
@@ -362,6 +369,14 @@ footer p {
   padding: 0.35rem;
 }
 
+/* >500 ******************************************************/
+@media screen and (min-width: 600px) {
+/* remove break in banner sentence */
+#intro br {
+  display: none;
+}
+
+
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {
   h2 {
@@ -431,6 +446,10 @@ footer p {
 }
 /* DESKTOP ****************************************************/
 @media screen and (min-width: 1060px) {
+  html {
+    font-size: 20px;
+  }
+
   #logo {
     background-image: url("../img/logo-horizontal.svg");
     background-size: contain;
@@ -460,7 +479,4 @@ footer p {
 }
 /* LARGE DISPLAYS ****************************************************/
 @media screen and (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
 }
