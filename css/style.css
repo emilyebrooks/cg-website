@@ -18,12 +18,12 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   color: #515855;
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 
 h2 {
   font-family: "josefin sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: normal;
   color: #515855;
 }
@@ -38,7 +38,7 @@ h3 {
 p {
   font-family: "raleway", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.35;
 }
 
@@ -50,7 +50,7 @@ p {
 
 nav {
   text-align: center;
-  padding: 1.25rem 1.25rem 0 1.25rem; /*0 on bottom to keep logo closer to menu bar */
+  padding: 1.25em 1.25em 0 1.25em; /*0 on bottom to keep logo closer to menu bar */
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav ul {
 nav ul li {
   font-family: "josefin sans", sans-serif;
   color: #2b7e7a; /* for lines */
-  padding: 1rem;
+  padding: 1em;
 }
 
 nav li a {
@@ -78,6 +78,7 @@ li a:hover {
 
 /* *** HAMBURGER NAV FOR SCREENS <342 ******************************************/
 /* .mobile-container {
+  padding-top: 1.5em; 
 } */
 
 .topnav {
@@ -92,9 +93,9 @@ li a:hover {
 /* Style nav menu links */
 .topnav a {
   color: #2b7e7a;
-  padding: 0.5rem;
+  padding: 0.5em;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "josefin sans", sans-serif;
   text-align: center;
   display: block;
@@ -103,7 +104,7 @@ li a:hover {
 /* Style the hamburger menu */
 .topnav a.icon {
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   top: 0;
 }
 
@@ -117,14 +118,14 @@ li a:hover {
   header nav {
     display: none;
   }
-}
+} /*End bracket for <342*/
 
 /* Hide hamburger menu on screens >341 */
 @media screen and (min-width: 342px) {
   .mobile-container {
     display: none;
   }
-}
+} /*End bracket for >342*/
 
 #logo {
   background-image: url("../img/logo-vertical.svg");
@@ -132,14 +133,14 @@ li a:hover {
   background-repeat: no-repeat;
   background-position: center top;
   height: 325px;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 /**** INTRO *******************************************/
 #intro {
   background-color: #f0edde;
   padding-top: 1em;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
   text-align: center;
 }
 
@@ -158,16 +159,16 @@ li a:hover {
 }
 
 .button {
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1em;
+  padding: 1em;
 }
 
 .email-link {
   font-family: "optima", serif;
-  font-size: 1rem;
+  font-size: 1em;
   color: white;
   background-color: #2b7e7a;
-  padding: 0.65rem;
+  padding: 0.65em;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -185,7 +186,7 @@ li a:hover {
 
 .about-text {
   background-color: #e1f4f1;
-  padding: 2rem 2rem 2rem 5rem;
+  padding: 2em 2em 2em 5em;
   width: 65%;
   float: right;
   margin-bottom: -5%;
@@ -202,7 +203,7 @@ li a:hover {
 /****Adjust alignment between photo edge and text box blue background on smaller screens ***/
 @media screen and (max-width: 440px) {
   .about-text {
-    padding: 2rem 3rem 2rem 4rem;
+    padding: 2em 3em 2em 4em;
     width: 58%;
   }
 
@@ -215,7 +216,7 @@ li a:hover {
 #services {
   clear: both;
   margin-top: 5%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1em;
 }
 
 #services h1 {
@@ -252,7 +253,7 @@ li a:hover {
   background-color: white;
   border: 1px solid #2b7e7a;
   text-align: center;
-  padding: 0.65rem;
+  padding: 0.65em;
 }
 
 #info p {
@@ -272,17 +273,17 @@ li a:hover {
 
 /**** CONNECT *******************************************/
 #connect {
-  padding-top: 0.5rem;
+  padding-top: 1em;
   text-align: center;
 }
 
 .contact-info {
-  margin: 1.5rem 1.5rem 1rem 1.5rem;
+  margin: 1.5em 1.5em 1em 1.5em;
 }
 
 .contact-info a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.75em;
   text-decoration: none;
   font-family: "optima", serif;
   color: #515855;
@@ -296,7 +297,7 @@ li a:hover {
 /* Contact Form */
 #fs-frm {
   font-family: "optima", serif;
-  padding-bottom: 2rem;
+  padding-bottom: 2em;
   color: #2b7e7a;
 }
 
@@ -311,10 +312,10 @@ label {
 input,
 textarea {
   display: block;
-  padding: 0.35rem;
+  padding: 0.5em;
   border: 2px solid #2b7e7a;
   background-color: #e1f4f1;
-  margin: 1.25rem auto;
+  margin: 1.25em auto;
 }
 
 ::placeholder {
@@ -343,14 +344,14 @@ textarea {
 
 /* Social Icons */
 .social-media {
-  margin: 3rem 35% 0 35%;
+  margin: 3em 35% 0 35%;
   display: flex;
   justify-content: center;
 }
 
 .fab {
   width: 60px;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-align: center;
   color: #2b7e7a;
   background: white;
@@ -359,14 +360,14 @@ textarea {
 /**** FOOTER *******************************************/
 
 footer {
-  padding: 2rem;
+  padding: 2em;
 }
 
 footer p {
   color: #515855;
   text-align: center;
   margin: 0;
-  padding: 0.35rem;
+  padding: 0.35em;
 }
 
 /* >500 ******************************************************/
@@ -380,7 +381,7 @@ footer p {
 /* TABLET ****************************************************/
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   nav ul {
@@ -388,7 +389,7 @@ footer p {
   }
 
   nav ul li {
-    font-size: 1.15rem;
+    font-size: 1.15em;
   }
 
   #logo {
@@ -404,8 +405,8 @@ footer p {
   }
 
   #services {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .icons-small {
@@ -419,14 +420,14 @@ footer p {
 
   .contact-info a {
     display: inline;
-    padding: 2rem;
+    padding: 2em;
   }
   .social-media {
-    margin: 1rem 35% 0 35%;
+    margin: 1em 35% 0 35%;
   }
 
   .social-media a {
-    padding: 0.25rem;
+    padding: 0.25em;
   }
 }
 
@@ -437,7 +438,7 @@ footer p {
   }
 
   .about-text p {
-    padding-left: 3rem;
+    padding-left: 3em;
   }
 
   .photo img {
@@ -459,8 +460,8 @@ footer p {
   }
 
   #services {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   .icons-small {
@@ -470,11 +471,16 @@ footer p {
   .icons-large {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 3rem;
+    margin-top: 3em;
   }
   .icons-large img {
     display: inline;
     /* text-align: center; */
+  }
+
+  #button {
+    width: 95px;
+    height: 45px;
   }
 } /*Closing bracket for 1060 */
 
